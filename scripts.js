@@ -282,7 +282,7 @@ function createClassChart(statistics) {
     const ctx = document.getElementById('class-chart').getContext('2d');
 
     window.classChart = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'bubble',
         data: classData,
         options: {
             scales: {
@@ -319,7 +319,7 @@ function createStudentChart(studentStatistics) {
     const ctx = document.getElementById('student-chart').getContext('2d');
 
     window.studentChart = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'bubble',
         data: studentData,
         options: {
             scales: {
